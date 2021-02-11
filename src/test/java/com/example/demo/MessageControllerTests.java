@@ -38,4 +38,10 @@ public class MessageControllerTests {
         when(repository.findAll()).thenReturn(new ArrayList<>());
         assertEquals(MessageController.BE_SUCCESS_MESSAGE, controller.getMessage());
     }
+
+    @Test
+    public void forTestingTravis() {
+        when(repository.findAll()).thenReturn(new ArrayList<>());
+        assertEquals(MessageController.DB_SUCCESS_MESSAGE, controller.getMessage());
+    }
 }
